@@ -57,8 +57,8 @@ The application displays an empty quote when site is loaded
 
 ## Contact details
 
-Contact me @ .[Gmail].(mailto:keza1brenda@gmail.com).
+Contact me @ keza1brenda@gmail.com
 
 ## License
 
-Copyright (c) 2020 Brenda KEZA
+Copyright (c) 2020 **Brenda KEZA
