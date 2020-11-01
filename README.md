@@ -37,23 +37,22 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## Specifications
 
 The following are the specifications for QuoteCorner:
-The quote, author and user input fields take in any data type
-The date input field is fixed to calender for user to pick from
-Quote is displayed inside quotation marks.
-Name of author of quote is displayed.
-Name of user posting the quote is displayed.
-Date and time of posting quote is displayed.
-Number of days that have passed since quote was posted is displayed.
+* The quote, author and user input fields take in any data type
+* The date input field is fixed to calender for user to pick from
+* Quote is displayed inside quotation marks.
+* Name of author of quote is displayed.
+* Name of user posting the quote is displayed.
+* Date and time of posting quote is displayed.
+* Number of days that have passed since quote was posted is displayed.
 
 ## Technologies Used
 
-Angular cli
-Typescript
-Bootstrap
+* Angular cli
+* Typescript
+* Bootstrap
 
 ## Known Bugs
 
-The application displays an empty quote when site is loaded
 
 ## Contact details
 
