@@ -1,14 +1,12 @@
-<div>
-    <h1>Quotes For All, All For Quotes!</h1>
-    <hr>
-    <ul>
-        <li *ngFor='let quotes of quote;let i = index'>
-          {{quotes.name}}
-          <button (click)='toggleDetails(i)'>Toggle Details</button>
-          <app-quote-details *ngIf='quotes.showDescription' [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
-        </li>
-    </ul>
-   <!--<p *ngIf='goals.length > 5'>Your goals are too many</p>-->
-</div>
+<h1>Quotes For All, All For Quotes!</h1>
+<hr>
+<ul>
+  <div *ngFor='let quotes of quote;let i = index'>
+    <li [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</li>
+    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <app-quote-details *ngIf='quotes.showDescription' [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
+  </div>
+</ul>
+
 
  

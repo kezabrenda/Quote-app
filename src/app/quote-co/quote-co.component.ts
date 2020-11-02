@@ -8,13 +8,13 @@ import { Quotes } from '../quotes';
 })
 export class QuoteCOComponent implements OnInit {
   quote: Quotes[]  = [
-    new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
-    new Quotes(2,'Buy Cookies','I have to buy cookies for the parrot'),
-    new Quotes(3,'Get new Phone Case','Diana has her birthday coming up soon'),
-    new Quotes(4,'Get Dog Food','Pupper likes expensive snacks'),
-    new Quotes(5,'Solve math homework','Damn Math'),
-    new Quotes(6,'Plot my world domination plan','Cause I am an evil overlord'),
-  ];
+    new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2020,11,1)),
+    new Quotes(2,'Buy Cookies','I have to buy cookies for the parrot',new Date(2020,11,1)),
+    new Quotes(3,'Get new Phone Case','Diana has her birthday coming up soon',new Date(2020,11,1)),
+    new Quotes(4,'Get Dog Food','Pupper likes expensive snacks',new Date(2020,11,1)),
+    new Quotes(5,'Solve math homework','Damn Math',new Date(2020,11,1)),
+    new Quotes(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2020,11,1)),
+    ];
 
 
   toggleDetails(index){
