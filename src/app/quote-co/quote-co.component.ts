@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 })
 export class QuoteCOComponent implements OnInit {
   quote = [
-    new Quotes("", "",new Date(2020,11,1)),
+    new Quotes(0, " ", " ",new Date(2020,11,1)),
     ];
 
 
@@ -22,7 +22,7 @@ export class QuoteCOComponent implements OnInit {
     console.log(this.quote);
   }
 
-  completeGoal(isComplete, index){
+  complete(isComplete, index){
     if (isComplete) {
       this.quote.splice(index,1);
     }

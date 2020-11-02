@@ -1,13 +1,19 @@
-<h1>Quotes For All, All For Quotes!</h1>
-<hr>
-<ul>
-  <div *ngFor='let quotes of quote;let i = index'>
-    <li [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</li>
-    <button (click)='toggleDetails(i)'>See Quotes</button>
-    <app-quote-details *ngIf='quotes.showDescription' [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
-    <button (click)='addNewQuote'>Add Quote</button>
+<div class="container">
+  <h1>Quotes For All, All For Quotes!</h1>
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quotes of quote;let i = index'>
+       
+        <div>
+          <h4 id={{i}} [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</h4>
+          <button (click)='toggleDetails(i)'>See Quotes</button>
+        </div>
+        <div *ngIf='quotes.showDescription'>
+          <app-quote-details [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
+          <button (click)='addNewQuote'>Add Quote</button>
+        </div>
+
+      </div>
+    </div>
   </div>
-</ul>
-
-
- 
+</div>
