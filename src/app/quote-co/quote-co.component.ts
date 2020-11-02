@@ -8,14 +8,23 @@ import { Quotes } from '../quotes';
 })
 export class QuoteCOComponent implements OnInit {
   quote: Quotes[]  = [
-    {id:1, name:'Watch finding Nemo',description:'Find an online version and watch merlin find his son'},
-    {id:2,name:'Buy Cookies',description:'I have to buy cookies for the parrot'},
-    {id:3,name:'Get new Phone Case',description:'Diana has her birthday coming up soon'},
-    {id:4,name:'Get Dog Food',description:'Pupper likes expensive sancks'},
-    {id:5,name:'Solve math homework',description:'Damn Math'},
-    {id:6,name:'Plot my world domination plan',description:'Cause I am an evil overlord'},
+    new Quotes(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son'),
+    new Quotes(2,'Buy Cookies','I have to buy cookies for the parrot'),
+    new Quotes(3,'Get new Phone Case','Diana has her birthday coming up soon'),
+    new Quotes(4,'Get Dog Food','Pupper likes expensive snacks'),
+    new Quotes(5,'Solve math homework','Damn Math'),
+    new Quotes(6,'Plot my world domination plan','Cause I am an evil overlord'),
   ];
 
+
+  toggleDetails(index){
+    this.quote[index].showDescription = !this.quote[index].showDescription;
+  }
+  completeGoal(isComplete, index){
+    if (isComplete) {
+      this.quote.splice(index,1);
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {

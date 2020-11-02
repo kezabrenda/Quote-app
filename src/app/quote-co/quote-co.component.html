@@ -1,11 +1,14 @@
-<p>quote-co works!</p>
 <div>
-    <h1>All Quotes</h1>
+    <h1>Quotes For All, All For Quotes!</h1>
     <hr>
     <ul>
-        <li *ngFor='let quotes of quote'>
+        <li *ngFor='let quotes of quote;let i = index'>
           {{quotes.name}}
+          <button (click)='toggleDetails(i)'>Toggle Details</button>
+          <app-quote-details *ngIf='quotes.showDescription' [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
         </li>
     </ul>
    <!--<p *ngIf='goals.length > 5'>Your goals are too many</p>-->
-  </div>
+</div>
+
+ 
