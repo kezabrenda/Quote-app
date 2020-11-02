@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { faThumbsUp, faThumbtack, faHashtag } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quote';
- 
+  title = 'font-awesome-angular';
+  faThumbsUp = faThumbsUp;
+  faThumbtack = faThumbtack;
+  faHashtag = faHashtag;
 }
