@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 })
 export class QuoteCOComponent implements OnInit {
   quote = [
-    new Quotes(0, " ", " ",new Date(2020,11,1)),
+    new Quotes(0, " ", " "," ",new Date()),
     ];
 
 
@@ -16,8 +16,10 @@ export class QuoteCOComponent implements OnInit {
     this.quote[index].showDescription = !this.quote[index].showDescription;
   }
 
-  addNewQuote(quote) {
-    quote.postingDate = new Date();
+  addNewQuote(index,quote) {
+    let quoteLength = this.quote.length;
+    quote.id = quoteLength+1;
+    quote.postingDate = new Date(quote.postingDate);
     this.quote.push(quote);
     console.log(this.quote);
   }

@@ -3,14 +3,18 @@
   <div class="row">
     <div class="col-md-6">
       <div *ngFor='let quotes of quote;let i = index'>
-       
+
         <div>
-          <h4 id={{i}} [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</h4>
-          <button (click)='toggleDetails(i)'>See Quotes</button>
+        <!--  <h4 id={{i}} [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</h4>-->
+          <button (click)='toggleDetails(i)' class="Squotes">See Quotes</button>
         </div>
         <div *ngIf='quotes.showDescription'>
           <app-quote-details [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
-          <button (click)='addNewQuote'>Add Quote</button>
+          <button (click)='addNewQuote'>Add Quotes</button>
+        </div>
+
+        <div *ngIf='quotes.showDescription' class="col-md-6">
+          <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
         </div>
 
       </div>

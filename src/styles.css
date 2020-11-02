@@ -1,2 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+body{
+    background-image: url("../src/assets/images/Qbg.jpg");
+    text-align: center;
+    color: #ffffffaf;
+}
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 90px;
+}
+
+.container {
+    background-image: url();
+    width: 100%;
+}
+
+.alert-danger {
+    font-family: 'Caveat', cursive;
+}
+
+.Squotes {
+    background-color: #9a9a9a;
+    color: rgb(80, 126, 6);
+    font-size: medium;
+    align-self: center;
+}
