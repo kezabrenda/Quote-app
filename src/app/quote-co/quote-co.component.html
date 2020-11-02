@@ -3,8 +3,9 @@
 <ul>
   <div *ngFor='let quotes of quote;let i = index'>
     <li [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</li>
-    <button (click)='toggleDetails(i)'>Toggle Details</button>
+    <button (click)='toggleDetails(i)'>See Quotes</button>
     <app-quote-details *ngIf='quotes.showDescription' [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
+    <button (click)='addNewQuote'>Add Quote</button>
   </div>
 </ul>
 

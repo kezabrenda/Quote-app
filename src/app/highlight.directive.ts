@@ -11,11 +11,11 @@ export class HighlightDirective {
 
   @Input('appHighlight') highlightColor: string;
 
-  @HostListener("mousehover") onMouseEnter(){
+  @HostListener("mousehover") onMouseHover(){
     this.highlight(this.highlightColor || this.defaultColor || 'violet')
   }
 
-  @HostListener("mouseleaver") onMouseLeave(){
+  @HostListener("mouseleave") onMouseLeave(){
     this.highlight("Null")
   }
 
