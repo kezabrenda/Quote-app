@@ -7,6 +7,8 @@ import { QuoteCOComponent } from './quote-co/quote-co.component';
 import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { VoteCountPipe } from './vote-count.pipe';
+import { UpvoteCountPipe } from './upvote-count.pipe';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { DateCountPipe } from './date-count.pipe';
     QuoteCOComponent,
     QuoteDetailsComponent,
     HighlightDirective,
-    DateCountPipe
+    DateCountPipe,
+    VoteCountPipe,
+    UpvoteCountPipe
   ],
   imports: [
     BrowserModule,
