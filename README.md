@@ -6,6 +6,10 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Brenda UMUTONIWASE KEZA
 
+### Link To Deployed Website
+
+`https://kezabrenda.github.io/Quote-app/`
+
 ## Description
 
 It is a web application that has a few quotes and users can upload theirs too as well as vote on for or against any quote on there.
@@ -58,6 +62,11 @@ The following are the specifications for QuoteCorner:
 
 Contact me @ keza1brenda@gmail.com
 
-## License
+## License and Copyright information.
+Copyright (c) [2020] [Brenda UMUTONIWASE KEZA]
 
-Copyright (c) 2020 **Brenda KEZA**
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
