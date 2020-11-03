@@ -2,4 +2,27 @@
 <p>posted on {{quote.completeDate|dateCount}} days ago</p>
 <button (click)= 'quoteComplete(true)'>Complete</button>
 <button (click)= 'quoteDelete(true)' class="btn btn-outline-danger">Delete Quote</button>
+
+<button class="btn btn-success up" (click) = 'upVote()'>upVote ({{quote.upVote}})</button>
+<button class="btn btn-default down" (click) = 'downVote()'>downVote ({{quote.downVote}})</button>
 -->
+
+
+<button><a class="green" ng-click="isUpVoted = !isUpVoted"  ng-style="afterVoteUp" href=""> <i title="Up Votes" class="fa fa-arrow-circle-up fa-2x"></i></a> </button>
+<button><a class="maroon" ng-click="isDownVoted = !isDownVoted" ng-style="afterVoteDown" href="" > <i title="Down Votes" class="fa fa-arrow-circle-down fa-2x "></i></a> </button>
+
+<script>
+    var app = angular.module('voteApp', []);
+
+app.controller('MainCtrl', function ($scope) {
+    $scope.upVote = function () {
+        $scope.vote++;
+    }
+
+    $scope.downVote = function () {
+        $scope.vote--;
+    }
+
+    $scope.vote = 0;
+});
+</script>

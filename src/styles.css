@@ -8,10 +8,16 @@ body{
     text-align: center;
     color: #ffffffaf;
 }
-h2,
+
 h1 {
     font-family: 'Permanent Marker', cursive;
     font-size: 90px;
+}
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    text-align: center;
+    color: rgba(80, 126, 6, 0.699);
 }
 
 .container {
@@ -27,5 +33,5 @@ h1 {
     background-color: #9a9a9a;
     color: rgb(80, 126, 6);
     font-size: medium;
-    align-self: center;
+    padding: 25px;
 }

@@ -8,7 +8,7 @@ import { Quotes } from '../quotes';
 })
 export class QuoteCOComponent implements OnInit {
   quote = [
-    new Quotes(0, " ", " "," ",new Date()),
+    new Quotes (0, 'Brenda KEZA', 'Mother Teresa', 'I can do things that you cannot do; you can do things that I cannot do. Together we make great things!', 0, 0,new Date(2020,11,2)),
     ];
 
 

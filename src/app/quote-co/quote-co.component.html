@@ -5,16 +5,25 @@
       <div *ngFor='let quotes of quote;let i = index'>
 
         <div>
-        <!--  <h4 id={{i}} [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</h4>-->
-          <button (click)='toggleDetails(i)' class="Squotes">See Quotes</button>
-        </div>
-        <div *ngIf='quotes.showDescription'>
-          <app-quote-details [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
-          <button (click)='addNewQuote'>Add Quotes</button>
+         <button (click)='toggleDetails(i)' class="Squotes">See Quotes</button>
         </div>
 
         <div *ngIf='quotes.showDescription' class="col-md-6">
+         <!-- <h4 id={{i}} [appHighlight]="color">{{quotes.name}} posted on {{quotes.completeDate|date|uppercase}}</h4>-->
+         <div class="jumbotron" *ngFor="let Quote of quotes; let i=index">
+          <blockquote class="blockquote mb-0">
+            <div>"{{quotes.quote}}"</div>
+            <div>By: {{quotes.author}}</div>
+            <div>Posted by: {{quotes.name}}</div>
+            <div>Posted on: {{quotes.completeDate}}</div>
+            <!--<app-quote-form [Quote]='Quote' (complete)='deleteQuote($event,i)'></app-form-details>-->
+          </blockquote>
           <app-quote-form (addQuotes)="addNewQuote($event)"></app-quote-form>
+        </div>
+
+        <div *ngIf='quotes.showDescription'>
+          <app-quote-details [quote]='quotes' isComplet = completeQuote($event,i)></app-quote-details>
+          <button (click)='addNewQuote'>Add Quotes</button>
         </div>
 
       </div>

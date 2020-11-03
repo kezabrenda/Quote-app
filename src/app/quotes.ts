@@ -4,8 +4,10 @@ export class Quotes {
     public id: number,
     public name: string,
     public author: string,
-    public description: string, 
-    public completeDate: Date){
+    public description: string,
+    public upVote: number, 
+    public downVote: number,
+    public uplodingDate: Date){
     this.showDescription=false;
   };
 }

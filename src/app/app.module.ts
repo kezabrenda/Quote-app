@@ -9,7 +9,6 @@ import { QuoteDetailsComponent } from './quote-details/quote-details.component';
 import { HighlightDirective } from './highlight.directive';
 import { DateCountPipe } from './date-count.pipe';
 import { QuoteFormComponent } from './quote-form/quote-form.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -20,7 +19,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     HighlightDirective,
     DateCountPipe,
     QuoteFormComponent,
-    FontAwesomeModule
 
   ],
   imports: [
@@ -32,3 +30,4 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+export declare class FontAwesomeModule {}
